@@ -1,0 +1,6 @@
+{
+  "name": "SpendWise",
+  "description": "An offline-first personal finance tracker to manage expenses, set budgets, and analyze spending.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
