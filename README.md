@@ -2,6 +2,9 @@
 
 SpendWise is an offline-first, native Android personal finance tracker developed using modern Kotlin and Jetpack Compose. It allows users to log expenses, set a monthly spending limit, and visualize spending distributions using interactive, animated visuals.
 
+
+---
+## Download apk: https://github.com/aarav911/SpendWise/releases/tag/v1.0.3
 ---
 
 ## 🚀 Key Features
