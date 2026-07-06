@@ -25,10 +25,12 @@ android {
 
   signingConfigs {
     create("release") {
-      val keystorePath = System.getenv("KEYSTORE_PATH") ?: "${rootDir}/my-upload-key.jks"
-      storeFile = file(keystorePath)
-      storePassword = System.getenv("STORE_PASSWORD")
-      keyAlias = "upload"
+      // 1. Point to the file created by the GitHub Action
+      storeFile = file("${rootDir}/app/release.jks")
+
+      // 2. Use the exact Secret Names from GitHub
+      storePassword = System.getenv("KEYSTORE_PASSWORD")
+      keyAlias = "my-key-alias" // 3. Use your actual alias
       keyPassword = System.getenv("KEY_PASSWORD")
     }
   }
