@@ -19,6 +19,9 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
           cache: 'gradle'
+      # ADD THIS STEP
+      - name: Grant Execute Permission for Gradlew
+        run: chmod +x gradlew
 
       - name: Decode Keystore
         env:
